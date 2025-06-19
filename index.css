@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+body {
+  text-align: center;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2,
+h1 {
+  color: rgb(138, 138, 138);
+}
+
+.calculadora {
+  width: 300px;
+  height: 470px;
+  background-color: rgb(216, 207, 194);
+  justify-content: center;
+  margin: auto;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.resultado,
+.numeros,
+.operaciones {
+  margin-bottom: 7px;
+}
+
+.resultado {
+  width: 290px;
+  height: 30px;
+  background-color: aliceblue;
+  color: rgb(138, 138, 138);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 8px 10px;
+}
+
+.numeros,
+.operaciones {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: auto auto auto;
+  user-select: none;
+}
+
+.numeros div,
+.operaciones div {
+  width: 100px;
+  height: 20px;
+  padding: 20px 0 20px 0;
+  font-weight: 500;
+  color: rgb(138, 138, 138);
+  background-color: white;
+  border-radius: 10px;
+  animation-duration: 4s;
+  cursor: pointer;
+}
+
+.numeros div:hover,
+.operaciones div:hover,
+.enviar:hover {
+  background-color: rgba(255, 255, 255, 0.507);
+  color: rgb(85, 85, 85);
+  animation-duration: 10s;
+}
+
+h1 {
+  margin: 0 0 10px 0;
+}
+
+h2 {
+  margin: 0px;
+  text-align: end;
+  font-size: 15px;
+}
+
+.enviar {
+  text-align: center;
+  margin: 0 auto 0 auto;
+  background-color: white;
+  color: rgb(138, 138, 138);
+  border-radius: 10px;
+  width: 100px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+
+#reiniciar,
+#borrar {
+  font-size: 0.1rem;
+}
